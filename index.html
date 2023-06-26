@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Snake Game</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="favicon/home-butterfly-yellow.svg" type="image/x-icon">
+</head>
+<body>
+
+
+<div class="mercBoy-container">
+    <header class="header">
+        <h1>mercBoy <span class="italic">SNAKE</span></h1>
+      </header>
+
+      
+<div class="screen-container">
+
+
+    <div class="inside-screen-header">
+        <p class="score">Score: <span id="score-board">0</span></p>
+        <p id="high-score">Hi:<span id="hi-score-board">0</span></p>
+    </div>
+    <div class="grid"></div>
+    <div id="start-screen" class="start-screen game-message">
+        <h2>Snake</h2>
+        <p>Press play to start!</p>
+        <p>
+          Use your arrow or WASD keys or the mercBoy D-pad to control the
+          snake.
+        </p>
+      </div>
+
+      <div id="pause-screen" class="pause-screen game-message">
+        <div class="pause-text-container">
+          <h2>Game Paused</h2>
+          <p>Press play to <br />resume!</p>
+        </div>
+      </div>
+
+      <div id="game-over" class="game-message">
+
+        <div class="game-over-container">
+            <h2>Game Over</h2>
+            <p class="score">Your Score: <span id="game-score-board">0</span></p>
+            <p>Press play to resume!</p>
+
+
+        </div>
+
+
+      </div>
+
+
+</div>
+
+
+<div class="btn-container">
+
+
+    <div class="d-pad-container">
+
+        <div id="btn-up" class="d-btn"><button>W</button></div>
+        <div id="btn-left-right">
+
+            <div id="btn-left" class="d-btn"><button>A</button></div>
+            <div id="btn-right" class="d-btn"><button>D</button></div>
+
+
+        </div>
+        <div id="btn-down" class="d-btn"><button>S</button></div> 
+
+
+
+    </div>
+
+    <div class="game-start-rest">
+
+            <button id="start" class="game-btn">⏹</button>
+            <button id="reset" class="game-btn">↻</button>
+
+    </div> 
+
+
+    
+
+
+</div>
+
+
+<footer>
+
+  <p>Coded by &nbsp;<a href="https://github.com/Shivendra-github">Shivendra</a></p>
+
+
+</footer>
+
+</div>
+
+
+
+     
+<script src="index.js"></script>
+</body>
+</html>

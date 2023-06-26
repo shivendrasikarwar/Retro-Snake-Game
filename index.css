@@ -1,0 +1,361 @@
+html , body{
+
+margin: 10px;
+padding: 0;
+
+
+
+
+
+
+}
+
+@font-face {
+    font-family:mercy0;
+    src: url(fonts/_ChEKD0RlbGEgR290aGljIE9uZSAFQhQKEGphcGFuZXNlX2RlZmF1bHQQAA==.117.woff2);
+}
+@font-face {
+    font-family:mercy;
+    src: url(fonts/_ChEKD0RlbGEgR290aGljIE9uZSAFQhQKEGphcGFuZXNlX2RlZmF1bHQQAA==.118.woff2);
+}
+
+@font-face {
+    font-family:snake;
+    src: url(fonts/e3t4euO8T-267oIAQAu6jDQyK3nVivM.woff2);
+}
+
+@font-face {
+  font-family: delta;
+  src: url(fonts/_ChEKD0RlbGEgR290aGljIE9uZSAFKgIIAEIUChBqYXBhbmVzZV9kZWZhdWx0EAA=.119.woff2);
+}
+.mercBoy-container {
+    margin: 0 auto;
+    width: 340px;
+    height: 600px;
+    border-radius: 25px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 6px black;
+    background: lightgray;
+    background: linear-gradient(to bottom, #d3d3d3, #bfbfbf);
+    position: relative;
+  }
+
+
+.screen-container {
+    width: 280px;
+    height: 230px;
+    padding: 5px;
+    margin: auto;
+    border: 5px solid black;
+    border-radius: 5%;
+    background: #aacc66;
+    background: radial-gradient(circle, #ac6 70%, #9aba5a 100%);
+    position: relative;
+  }
+
+
+.grid{
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 240px;
+    height: 180px;
+    border: 2px solid black ;
+    margin: 10px auto;
+    display: none;
+   
+
+
+
+
+
+}
+
+.apple {
+    background-image: url(apple-image/apple-alt-solid.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+.square{
+
+    width: 12px;
+    height: 12px;
+    
+
+
+
+
+}
+
+.snake{
+
+    background-color: #2d2d2d;
+    border-radius: 35%;
+
+
+
+}
+
+.header {
+    margin-top: 20px;
+    text-align: center;
+    font-family: mercy,mercy0;
+    color: #4d4787;
+    font-size:0.6rem;
+  }
+
+  .italic {
+    font-style: italic;
+  }
+  .scoreboard {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+  }
+
+  .inside-screen-header{
+
+    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  margin: 0;
+  font-family: snake;
+ 
+
+
+
+
+
+}
+
+.inside-screen-header p{
+
+
+margin: 0;
+
+}
+
+
+.d-pad-container{
+
+
+    
+    height: 25vh;
+    width: 50%;
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    
+    
+
+
+}
+
+ #btn-left-right{
+
+
+    display: flex;
+    flex-direction: row;
+   justify-content:space-evenly;
+   gap: 10px;
+   
+    
+
+
+} 
+
+
+#btn-up{
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+
+
+}
+
+#btn-down{
+
+
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+
+button{
+
+    width: 40px;
+    height: 40px;
+    border: unset;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px black;
+    text-decoration: none;
+    padding: 0;
+    font-size: 1rem;
+    color: white;
+    margin: 2px;
+    background-color: #2d2d2d;
+    border-radius:2px;
+    
+    
+
+
+
+
+
+
+
+}
+
+
+button:active {
+    background-color: gray;
+    transform: scale(0.9);
+  }
+
+  button:hover,button:focus {
+    border: 2px solid orange;
+    outline-style: none;
+  }
+
+
+.game-btn{
+    
+    background-color: #ab3c63;
+  border-radius: 100%;
+  font-size: 20px;
+  
+
+
+
+    }
+
+.game-start-rest{
+
+
+    display: inline-block;
+    
+    vertical-align: top;
+    margin-left: 25px;
+    margin-top: 20px;
+
+
+
+
+}
+
+.btn-container{
+
+margin-top: 20px;
+
+
+}
+
+#start{
+text-align: center;
+
+margin: 0 5px;
+margin-top: 0;
+
+}
+#reset{
+
+ 
+
+margin: 5px;
+margin-top: 0;
+font-weight: bolder;
+font-size: 25px;
+
+}
+
+.game-message {
+  font-family: snake;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.start-screen {
+  display: block;
+  
+  
+}
+.start-screen P {
+  font-size: 0.8rem;
+  line-height: 1.3;
+  padding: 5px 25px;
+}
+
+
+#pause-screen{
+
+  display: none;
+  background-color: rgba(255, 255, 255, 0.7);
+
+
+
+
+
+}
+
+
+.game-over-container ,h2 ,p{
+
+margin: 0;
+
+}
+
+#game-over{
+
+
+display: none;
+background-color:rgba(255, 255, 255, 0.7);
+padding-top: 20px;
+padding-bottom: 20px;
+
+}
+
+footer{
+
+
+font-size: 0.8rem;
+font-family: delta ,HK Grotesk,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,sans-serif;
+width: 100%;
+text-align: center;
+font-weight: bold;
+position: absolute;
+bottom: 10px;
+
+
+
+}
+
+a{
+
+  color: #337ab7;
+  text-decoration: none;
+
+
+
+}
+
+a:hover,
+a:focus {
+  color: #b45922;
+  text-decoration: underline;
+}
+

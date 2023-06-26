@@ -14,7 +14,7 @@ I've had a lot of fun adding my own styling and expanding the functionality, suc
 
 ## Game Demo
 
-![Logo](https://im.ezgif.com/tmp/ezgif-1-9787097430.gif))
+![Logo](https://im.ezgif.com/tmp/ezgif-1-9787097430.gif)
 
 You can [ see the game in action here.](https://shivendra-github.github.io/Retro-Snake-Game//)
 
